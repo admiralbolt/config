@@ -1,6 +1,6 @@
 # Copies files to ~/scratch with the current date.
 function save
-  if [ (count $argv) > 0 ]
+  if test (count $argv) -gt 0
     for fname in $argv
       switch $fname
       case "*.*"

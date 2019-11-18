@@ -1,6 +1,6 @@
 # Copies file from ~/scratch from the latest date.
 function load
-  if [ (count $argv) > 0 ]
+  if test (count $argv) -gt 0
     for fname in $argv
       switch $fname
       case "*.*"
